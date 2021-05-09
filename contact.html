@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Fabian Muscat Photography | Contact Us</title>
+        <link rel='icon' href='images/website_icon.png' type='image/png' />
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/hamburger_menu.js"></script>
+    </head>
+
+    <body>
+      <div class="main">
+        <div class="gallery_bg"><img src="images/gallery_bg.jpg" alt="Background Image"></div>
+        <div class="header">
+
+            <nav class="navbar">
+              <div id="camera_icon"></div>
+              <div class="menu-bars">
+                <i class="fas fa-bars fa-2x"></i>
+              </div>
+
+              <ul class="links" id="topnav">
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="gallery.html">Gallery</a></li>
+                <li class="link"><a href="info.html">Equipment and Info</a></li>
+                <li class="link"><a href="about.html">About</a></li>
+                <li class="link"><a href="contact.html">Contact Us</a></li>
+              </ul>
+
+              <div class="social_icons">
+                <a class="social" href="https://www.facebook.com/FabianMuscatPhotography/?ref=bookmarks"><div id="sm_icon1"></div></a>
+                <a class="social" href="https://500px.com/fabianmuscat"><div id="sm_icon2"></div></a>
+              </div>
+            </nav>
+        </div>
+
+        <div class="contact_middle">
+
+          <div class="form">
+            <section>
+              <span>Contact Us</span>
+              <form>
+                <div class="input_wrapper"><input type="text" id="f_name" name="name" value="" placeholder="Name*"></div>
+                <div class="clear"></div>
+
+                <div class="input_wrapper"><input type="text" id="l_name" name="surname" value="" placeholder="Last Name*"></div>
+                <div class="clear"></div>
+
+                <div class="input_wrapper"><input type="text" id="email" name="email" value="" placeholder="Email*"></div>
+                <div class="clear"></div>
+
+                <textarea name="comments" rows="8" placeholder="Comments..."></textarea>
+                <div class="clear"></div>
+
+                <input id="submit" type="submit" name="submit" value="Submit">
+              </form>
+            </section>
+          </div>
+
+          <div class="int_map">
+            <!-- <h3>Google Map</h3> -->
+            <div id="map"></div>
+            <script>
+              function initMap() {
+                var location = {lat: 35.876919, lng: 14.507925};
+                var map = new google.maps.Map(document.getElementById("map"), {zoom: 15, center: location});
+                var marker = new google.maps.Marker({position: location, map: map});
+              }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx_z2zs6DkKNo4dLtc1oapM4XnazHZqss&callback=initMap"></script>
+          </div>
+
+        </div>
+
+        <div class="index_footer">
+          <div class="column">
+            <p style="font-size: 30px; font-family: 'Righteous', cursive">Tutorials</p>
+            <a href="https://expertphotography.com/a-beginners-guide-to-photography/" target="_blank">Beginners Guide to Photography</a>
+            <a href="https://photographylife.com/understanding-metering-modes" target="_blank">Understanding Metering Modes</a>
+            <a href="https://digital-photography-school.com/step-by-step-guide-to-long-exposure-photography/" target="_blank">Long Exposure Photography</a>
+            <a href="https://petapixel.com/2013/03/18/how-to-photograph-star-trails-from-start-to-finish/" target="_blank">Star Trail Photography</a>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
