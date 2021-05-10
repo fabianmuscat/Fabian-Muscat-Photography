@@ -101,6 +101,7 @@
     border-radius: 2px;
     float: left;
     margin-top: 35px;
+    margin-right: 20px;
     padding-right: 20px;
     filter: drop-shadow(0 0 10px #555);
 }
