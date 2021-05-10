@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.0.10/css/all.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 1920px;
+  max-height: 1080px;
+  width: 100%;
+}
+
+.bg_img img {
+  margin-top: 80px;
+  filter: brightness(50%);
+  width: 100%;
+  max-width: 1920px;
+  float: left;
+}
+
+/* Navigation Bar */
+
+.header {
+  color: black;
+}
+
+.navbar {
+  z-index: 1;
+  max-width: 1920px;
+  max-height: 80px;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  font-weight: bold;
+  font-size: 18px;
+  filter: drop-shadow(0 0 5px #333);
+  background-color: #fff;
+}
+
+#camera_icon {
+  background-image: url('../images/camera_icon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 5%;
+  height: 100%;
+  margin-left: 8%;
+  float: left;
+}
+
+.links {
+  background-color: #fff;
+  width: auto;
+  overflow: hidden;
+  color: black;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  float: left;
+  margin-left: 13%;
+}
+
+.link {
+  display: inline-block;
+}
+
+.link a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  padding: 30px;
+}
+
+.link a:hover {
+  color: #F48F2B;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+}
+
+.menu-bars {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  text-align: right;
+  padding: 5px 0;
+  cursor: pointer;
+  color: black;
+  display: none;
+}
+
+.menu-bars .fas {
+  margin-right: 20px;
+  margin-top: 12px;
+  font-size: 25px;
+}
+
+.social_icons {
+  float: right;
+  width: 7.5%;
+  transform: translate(-50%, 75%);
+}
+
+.social {
+  text-decoration: none;
+}
+
+#sm_icon1 {
+  background-image: url('../images/facebook_icon.png');
+  background-size: contain;
+  width: 48%;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin-right: 1%;
+  float: left;
+}
+
+#sm_icon2 {
+  background-image: url('../images/500px-monogram.png');
+  background-size: contain;
+  width: 50%;
+  height: 30px;
+  background-repeat: no-repeat;
+  float: right;
+}
+
+#sm_icon1:hover,
+#sm_icon2:hover {
+  opacity: 0.6;
+}
+
+.gallery_bg img {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+  filter: brightness(30%);
+  float: left;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Footer */
+
+.other_links {
+  text-decoration: none;
+  color: black;
+}
+
+.other_links:hover {
+  color: #F48F2B;
+  text-decoration: underline;
+}
+
+.index_footer,
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  filter: drop-shadow(0 0 5px #444);
+  clear: both;
+  float: left;
+}
+
+.column {
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  margin-left: -175px;
+}
+
+.column p {
+  font-size: 30px;
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.column a {
+  width: 350px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 2px;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  #camera_icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 6%;
+    margin-top: 7px;
+    float: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .navbar {
+    line-height: 40px;
+    height: 40px;
+    max-height: 40px;
+  }
+
+  .links {
+    max-height: 0;
+    position: fixed;
+    top: 3.5em;
+    font-size: 16px;
+    transition: all 1s ease-in-out;
+    margin-left: 0;
+    width: auto;
+  }
+
+  .link {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+
+  .link a {
+    padding: 20px;
+  }
+
+  .menu-bars {
+    cursor: auto;
+    display: block;
+    position: fixed;
+    top: 0;
+  }
+
+  .fas {
+    cursor: pointer;
+    color: black;
+    -webkit-transition: color 0.1s;
+    -moz-transition: color 0.1s;
+    -o-transition: color 0.1s
+  }
+
+  .fas:hover {
+    color: #F48F2B;
+    -webkit-transition: color 0.1s;
+    -moz-transition: color 0.1s;
+    -o-transition: color 0.1s;
+  }
+
+  .showing {
+    max-height: 30em;
+    position: fixed;
+    top: 3.5em;
+  }
+
+  .social_icons {
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 60px;
+    transform: translate(-70%, 0);
+
+  }
+
+  #sm_icon1,
+  #sm_icon2 {
+    margin-left: 12.5%;
+    margin-top: 17px;
+    width: 37%;
+    height: 25px;
+    float: left;
+  }
+
+  .bg_img img {
+    margin-top: 0;
+    position: fixed;
+    height: 100%;
+  }
+
+  .index_footer {
+    position: fixed;
+    bottom: 0;
+    height: 120px;
+  }
+
+  .footer {
+    height: 125px;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    display: none;
+  }
+
+  .column p {
+    margin-top: 0;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .column a {
+    padding: 0;
+    font-size: 12px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .social_icons {
+    clear: none;
+    float: right;
+    width: 10%;
+    transform: translate(0, 20px);
+    left: 0;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  #camera_icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5%;
+    float: left;
+  }
+
+  .navbar {
+    position: fixed;
+    line-height: 60px;
+    height: 60px;
+    max-height: 60px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .links {
+    font-size: 16px;
+    width: auto;
+    margin-left: 90px;
+    margin-right: 60px;
+  }
+
+  .link {
+    width: auto;
+    display: inline-block;
+    float: left;
+  }
+
+  .link a {
+    padding: 15px;
+  }
+
+  .menu-bars {
+    display: none;
+  }
+
+  .showing {
+    max-height: 30em;
+    position: fixed;
+    top: 3.5em;
+  }
+
+  .bg_img img {
+    height: 100%;
+    margin-top: 60px;
+    position: fixed;
+  }
+
+  #sm_icon1,
+  #sm_icon2 {
+    width: 45%;
+    height: 20px;
+
+  }
+
+  .index_footer {
+    position: fixed;
+    bottom: 0;
+    height: 180px;
+  }
+
+  .footer {
+    height: 190px;
+  }
+
+  .column p {
+    font-size: 1.5rem;
+  }
+
+  .column a {
+    font-size: 18px;
+  }
+
+  .gallery_bg img {
+    margin-top: 0;
+    position: fixed;
+    height: 100%;
+  }
+}

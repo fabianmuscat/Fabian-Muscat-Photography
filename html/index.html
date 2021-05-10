@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Fabian Muscat Photography | Home</title>
+
+  <link rel='icon' href='../images/website_icon.png' type='image/png' />
+
+  <link rel='stylesheet' href='../styles/common.css' type='text/css'>
+  <link rel="stylesheet" href="../styles/homepage.css" type="text/css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="../scripts/hamburger_menu.js"></script>
+</head>
+
+<body>
+  <div class="bg_img"><img src="../images/bg_img.jpg" alt="Background Image"></div>
+
+  <div class="main">
+    <div class="header">
+
+      <nav class="navbar">
+        <div id="camera_icon"></div>
+        <div class="menu-bars">
+          <i class="fas fa-bars fa-2x"></i>
+        </div>
+
+        <ul class="links" id="topnav">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="gallery.html">Gallery</a></li>
+          <li class="link"><a href="info.html">Equipment and Info</a></li>
+          <li class="link"><a href="about.html">About</a></li>
+          <li class="link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="social_icons">
+          <a class="social" href="https://www.facebook.com/FabianMuscatPhotography/?ref=bookmarks">
+            <div id="sm_icon1"></div>
+          </a>
+          <a class="social" href="https://500px.com/fabianmuscat">
+            <div id="sm_icon2"></div>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="index_middle">
+      <span id="web_name">Fabian Muscat Photography</span>
+      <span id="desc" style="color: white">A Photography Hobbyist</span>
+      <div id="works_button"><a href="gallery.html" class="works">See my Works</a></div>
+    </div>
+
+    <div class="props">
+      <div class="content">
+        <button type="button" name="button" style="float: right" id="close">Close</button>
+        <strong style="text-decoration: underline;">CSS3 Properties:</strong><br><br>
+
+        <strong>box-shadow:</strong> This was used in the "Equipement and Info" and "Gallery" Webpages to make a box
+        shadow behind the images in both webpages.
+        <br><br>
+        <strong>justify-content:</strong> This property was used in every page when the website is being viewed on a
+        viewport less than a desktop to center the content.
+        It was also used for seperate content in the "Contact" and "Gallery" webpages. In the Contact, the form was
+        centered when viewed on a smartphone
+        and the images were centered as well in the Gallery webpage when viewed on a smartphone. For this property to
+        work, the "display: flex" property was implemented before.
+        <br><br>
+        <strong>opacity:</strong> This property was used in the navigation bar and in the contact form to reduce the
+        opacity when hovering over the buttons/icons.
+        <br><br>
+        <strong>grid-gap:</strong> This was used in the "Gallery" and "Equiment and Info" webpages to set the column/row
+        gaps simultaneously of the grid. The "display: grid" property was used before.
+        <br><br>
+        <strong>grid-template-columns:</strong> This was used in the "Gallery" and "Equiment and Info" webpages to set
+        the number of columns required.
+        <br><br>
+        <strong>grid-row:</strong> Ths was used in the "Gallery" webpage to set the height of the row of certain images
+        as they were larger than others. They were spaned over 2 rows.
+        <br><br>
+        <strong>background-size:</strong> This property was used to set the background size of images that were imported
+        using the "background-image: url()" property. This was used in the navigation bar and the
+        "Equiment and Info" webpage.<br><br>
+        <strong>border-radius:</strong> This property was used in the contact form to set the radius of the form and in
+        the "Equipment and Info" page to set the radius of an image.
+
+        <br><br>
+        <strong style="text-decoration: underline">Upload Process:</strong> <br><br>
+
+        This website was uploaded using <a class="other_links" href="https://000webhost.com"><strong>000
+            Webhost</strong></a>. The first step was to sign up with this web hosting company. After registering, a
+        name to the website was given and from the File Manager, the necessary files for the website where
+        uploaded.<br><br>
+
+        <div class="prop_imgs">
+          <a href="../images/image1.png" target="_blank"><img class="process_imgs" src="../images/image1.png"
+              alt="Process Image 1"></a>
+          <a href="../images/image1.png" target="_blank"><img class="process_imgs" src="../images/image2.png"
+              alt="Process Image 2"></a>
+        </div>
+
+        <br><br> <strong>Website Link:</strong> <a class="other_links"
+          href="http://fabianmuscatphotography.000webhostapp.com/index.html">Fabian Muscat Photography | Home</a><br>
+        <strong>Website Link (Shortened):</strong> <a class="other_links" href="http://b.link/fmp">Fabian Muscat
+          Photography | Home</a>
+      </div>
+    </div>
+
+    <script>
+      $(function () {
+        var props = $('.props');
+        var button = $('#props_button');
+        var close = $('#close');
+
+        button.click(function () {
+          props.css('display', 'flex');
+          props.show();
+        });
+
+        close.click(function () {
+          props.hide();
+        });
+
+      });
+    </script>
+
+    <div class="index_footer">
+      <button id="props_button">CSS3 Properties and External Link</button>
+      <div class="column">
+        <p>Tutorials</p>
+        <a href="https://expertphotography.com/a-beginners-guide-to-photography/" target="_blank">Beginners Guide to
+          Photography</a>
+        <a href="https://photographylife.com/understanding-metering-modes" target="_blank">Understanding Metering
+          Modes</a>
+        <a href="https://digital-photography-school.com/step-by-step-guide-to-long-exposure-photography/"
+          target="_blank">Long Exposure Photography</a>
+        <a href="https://petapixel.com/2013/03/18/how-to-photograph-star-trails-from-start-to-finish/"
+          target="_blank">Star Trail Photography</a>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

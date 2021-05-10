@@ -1,0 +1,283 @@
+/* Equiment and Info Webpage */
+
+.section1 {
+    float: left;
+    box-shadow: 0 0 10px #333;
+    font-size: 16px;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 25px;
+    width: auto;
+}
+
+.info_middle {
+    padding: 25px;
+    float: left;
+    padding: 20px;
+    margin-top: 6%;
+    width: 70%;
+    left: 50%;
+    position: relative;
+    margin-left: -35%;
+}
+
+.rows {
+    display: grid;
+    grid-template-columns: auto 400px;
+    grid-gap: 20px;
+    grid-column-gap: 0;
+}
+
+.rows h1 {
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+.rows h2 {
+    margin-bottom: 10px;
+}
+
+.rows a {
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+    float: left;
+    clear: both;
+    margin-top: 3%;
+    border: 2px solid black;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+}
+
+.rows a:hover {
+    box-shadow: 2.5px 2.5px 0 0 #ccc;
+    background-color: black;
+    color: white;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+}
+
+.row1,
+.row3,
+.row4 {
+    padding-bottom: 20px;
+    grid-column: 1 / span 2;
+    text-align: justify;
+}
+
+.row2 {
+    padding-bottom: 5px;
+    text-align: justify;
+}
+
+#mob_cam_link {
+    display: none;
+    margin-top: 5px;
+    float: left;
+    clear: both;
+}
+
+#mob_cam_img {
+    display: none;
+    background: url('../images/canon_eos.jpg') no-repeat;
+    background-size: contain;
+    width: auto;
+    height: 150px;
+    border-radius: 2px;
+    margin-top: 20px;
+    filter: drop-shadow(0 0 2px #555);
+}
+
+#cam_img {
+    background-image: url('../images/canon_eos.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 150px;
+    border-radius: 2px;
+    float: left;
+    margin-top: 35px;
+    padding-right: 20px;
+    filter: drop-shadow(0 0 10px #555);
+}
+
+#tripod {
+    background-image: url('../images/tripod.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 280px;
+    mix-blend-mode: multiply;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#prime_lens {
+    background-image: url('../images/prime_lens.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: 15px;
+    mix-blend-mode: multiply;
+    width: 300px;
+    height: 280px;
+}
+
+#wide_angle {
+    background-image: url('../images/wide_angle.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+    margin-left: -135px;
+    margin-top: 25px;
+    mix-blend-mode: multiply;
+    width: 270px;
+    height: 270px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    /* Info Webpage */
+    .section1 {
+        margin: 0 auto;
+        padding: 20px;
+        width: auto;
+    }
+
+    .rows {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+
+    .info_middle {
+        margin-top: 15%;
+        margin-bottom: 35%;
+        width: auto;
+        margin-left: 0;
+        left: 0;
+    }
+
+    .rows a {
+        padding: 5px;
+        font-size: 0.75rem;
+        margin-top: 2%;
+    }
+
+    .rows p {
+        font-size: 0.75rem;
+    }
+
+    .rows h1 {
+        font-size: 1.25rem;
+    }
+
+    .rows h2 {
+        font-size: 1rem;
+    }
+
+    .row2 {
+        grid-column: span 2;
+    }
+
+    #mob_cam_link,
+    #mob_cam_img {
+        display: block;
+    }
+
+    #cam_link,
+    #cam_img {
+        display: none;
+    }
+
+    #prime_lens {
+        left: 50%;
+        margin-left: -100px;
+        width: 200px;
+        height: 180px;
+    }
+
+    #tripod {
+        width: 140px;
+        height: 140px;
+        mix-blend-mode: multiply;
+        position: relative;
+        left: 50%;
+        margin-left: -70px;
+        margin-bottom: 10px;
+        transform: translate(0);
+    }
+
+    #wide_angle {
+        left: 50%;
+        margin-left: -100px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Info Webpage */
+
+    .section1 {
+        width: auto;
+    }
+
+    .info_middle {
+        margin-top: 8%;
+        margin-bottom: 0;
+        width: auto;
+        margin-left: 0;
+        left: 0;
+    }
+
+    .rows {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+
+    #mob_cam_link {
+        font-size: 18px;
+        margin-left: 25%;
+    }
+
+    #cam_link,
+    #cam_img {
+        display: none;
+    }
+
+    #mob_cam_link,
+    #mob_cam_img {
+        display: block;
+    }
+
+    #mob_cam_img {
+        height: 200px;
+        margin-left: 25%;
+    }
+
+    #prime_lens {
+        margin-left: -110px;
+        width: 220px;
+        height: 200px;
+    }
+
+    #tripod {
+        width: 200px;
+        height: 200px;
+        margin-left: -100px;
+        margin-bottom: 10px;
+        transform: translate(0);
+    }
+
+    #wide_angle {
+        margin-left: -110px;
+        width: 220px;
+        height: 220px;
+    }
+}
